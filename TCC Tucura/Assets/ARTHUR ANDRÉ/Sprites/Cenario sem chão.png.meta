@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "Cenario sem ch\xE3o_0": 4628388207650500659
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
