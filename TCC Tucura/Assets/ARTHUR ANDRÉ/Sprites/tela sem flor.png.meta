@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tela sem flor_0: -4319768471945786694
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
