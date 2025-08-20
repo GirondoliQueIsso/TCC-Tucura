@@ -9,7 +9,7 @@ public class MenuController : MonoBehaviour
     // Esta função será chamada pelo botão
     public void IniciarJogo()
     {
-        SceneManager.LoadScene("CENA JOGO");
+        SceneManager.LoadScene("SELECTPLAYER");
     }
     public void AbrirOpcoes()
     {
