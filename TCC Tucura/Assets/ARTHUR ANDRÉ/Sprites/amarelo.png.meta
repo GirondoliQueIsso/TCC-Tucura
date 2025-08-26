@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      amarelo_0: 8372472312265930973
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
