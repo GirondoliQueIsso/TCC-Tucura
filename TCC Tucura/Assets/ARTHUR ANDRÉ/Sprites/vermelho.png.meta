@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9bfa3b7a474a9064fbcfc672ea51eecb
+guid: 7fa841131cafca34b993f2317e4684ad
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1974731983448625665
-    second: Captura de tela 2025-08-20 091828_0
+      213: -3133363588515087037
+    second: vermelho_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Captura de tela 2025-08-20 091828_0
+      name: vermelho_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 565
-        height: 357
+        width: 800
+        height: 534
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 102de00c648a76b10800000000000000
-      internalID: 1974731983448625665
+      spriteID: 34d3a62ea6e0484d0800000000000000
+      internalID: -3133363588515087037
       vertices: []
       indices: 
       edges: []
@@ -174,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Captura de tela 2025-08-20 091828_0: 1974731983448625665
+      vermelho_0: -3133363588515087037
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

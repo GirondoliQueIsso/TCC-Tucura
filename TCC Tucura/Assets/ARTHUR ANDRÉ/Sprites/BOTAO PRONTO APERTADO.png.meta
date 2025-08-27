@@ -1,10 +1,25 @@
 fileFormatVersion: 2
-guid: 9bfa3b7a474a9064fbcfc672ea51eecb
+guid: 0cd17b458c562414a8ce02d10cb15f98
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1974731983448625665
-    second: Captura de tela 2025-08-20 091828_0
+      213: 6546445956104178688
+    second: BOTAO PRONTO APERTADO_0
+  - first:
+      213: 6372040997481076050
+    second: BOTAO PRONTO APERTADO_1
+  - first:
+      213: -1535672374238269297
+    second: BOTAO PRONTO APERTADO_2
+  - first:
+      213: 6796883244626853972
+    second: BOTAO PRONTO APERTADO_3
+  - first:
+      213: 1323583025339492870
+    second: BOTAO PRONTO APERTADO_4
+  - first:
+      213: 220256540013277718
+    second: BOTAO PRONTO APERTADO_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +61,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -139,13 +154,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Captura de tela 2025-08-20 091828_0
+      name: BOTAO PRONTO APERTADO_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 565
-        height: 357
+        y: 2
+        width: 152
+        height: 217
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +169,118 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 102de00c648a76b10800000000000000
-      internalID: 1974731983448625665
+      spriteID: 00cc1ea99e5a9da50800000000000000
+      internalID: 6546445956104178688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOTAO PRONTO APERTADO_1
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 0
+        width: 180
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 255d515d6890e6850800000000000000
+      internalID: 6372040997481076050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOTAO PRONTO APERTADO_2
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 0
+        width: 221
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f80b52aac1230bae0800000000000000
+      internalID: -1535672374238269297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOTAO PRONTO APERTADO_3
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 0
+        width: 183
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 450c9cfac41635e50800000000000000
+      internalID: 6796883244626853972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOTAO PRONTO APERTADO_4
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 2
+        width: 166
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60ae818bfbf4e5210800000000000000
+      internalID: 1323583025339492870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOTAO PRONTO APERTADO_5
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 0
+        width: 220
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 612b2faf7228e0300800000000000000
+      internalID: 220256540013277718
       vertices: []
       indices: 
       edges: []
@@ -164,7 +289,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -174,7 +299,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Captura de tela 2025-08-20 091828_0: 1974731983448625665
+      BOTAO PRONTO APERTADO_0: 6546445956104178688
+      BOTAO PRONTO APERTADO_1: 6372040997481076050
+      BOTAO PRONTO APERTADO_2: -1535672374238269297
+      BOTAO PRONTO APERTADO_3: 6796883244626853972
+      BOTAO PRONTO APERTADO_4: 1323583025339492870
+      BOTAO PRONTO APERTADO_5: 220256540013277718
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

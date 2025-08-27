@@ -1,0 +1,1924 @@
+fileFormatVersion: 2
+guid: 1def06138f97d7c469c3c9042653ea21
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6047163056353439059
+    second: TEXTO 1_0
+  - first:
+      213: 6867812345756100594
+    second: TEXTO 1_1
+  - first:
+      213: 4138102013093928168
+    second: TEXTO 1_2
+  - first:
+      213: 6582934052792243104
+    second: TEXTO 1_3
+  - first:
+      213: 2063597398245123852
+    second: TEXTO 1_4
+  - first:
+      213: 1063181840142429576
+    second: TEXTO 1_5
+  - first:
+      213: 1948249382478850088
+    second: TEXTO 1_6
+  - first:
+      213: 5551356948918764401
+    second: TEXTO 1_7
+  - first:
+      213: 5191654335419382926
+    second: TEXTO 1_8
+  - first:
+      213: -4987671320387301733
+    second: TEXTO 1_9
+  - first:
+      213: -989199127101522576
+    second: TEXTO 1_10
+  - first:
+      213: 8055978251220289418
+    second: TEXTO 1_11
+  - first:
+      213: -6061653000570747539
+    second: TEXTO 1_12
+  - first:
+      213: 1973234901677480456
+    second: TEXTO 1_13
+  - first:
+      213: 3225523436180948211
+    second: TEXTO 1_14
+  - first:
+      213: 1835389329159801988
+    second: TEXTO 1_15
+  - first:
+      213: -5576238103216874805
+    second: TEXTO 1_16
+  - first:
+      213: 4822195795940818704
+    second: TEXTO 1_17
+  - first:
+      213: 3401658343035212524
+    second: TEXTO 1_18
+  - first:
+      213: -1252468234296272549
+    second: TEXTO 1_19
+  - first:
+      213: 7879196655971781408
+    second: TEXTO 1_20
+  - first:
+      213: 4168629576694160555
+    second: TEXTO 1_21
+  - first:
+      213: -8308039110181542541
+    second: TEXTO 1_22
+  - first:
+      213: -9209537713098485484
+    second: TEXTO 1_23
+  - first:
+      213: 4362239807930473696
+    second: TEXTO 1_24
+  - first:
+      213: 5529994965038346294
+    second: TEXTO 1_25
+  - first:
+      213: -1589283368523347217
+    second: TEXTO 1_26
+  - first:
+      213: 3969679627410084053
+    second: TEXTO 1_27
+  - first:
+      213: 4417486516737883385
+    second: TEXTO 1_28
+  - first:
+      213: 4348389418530649853
+    second: TEXTO 1_29
+  - first:
+      213: 105896992850151367
+    second: TEXTO 1_30
+  - first:
+      213: -4415043321888856368
+    second: TEXTO 1_31
+  - first:
+      213: -7545513819012898646
+    second: TEXTO 1_32
+  - first:
+      213: 5998266692947063032
+    second: TEXTO 1_33
+  - first:
+      213: 8267964772003407544
+    second: TEXTO 1_34
+  - first:
+      213: -4031301007156459669
+    second: TEXTO 1_35
+  - first:
+      213: 8913405765398066708
+    second: TEXTO 1_36
+  - first:
+      213: 7853966618592195968
+    second: TEXTO 1_37
+  - first:
+      213: 5992761640845124779
+    second: TEXTO 1_38
+  - first:
+      213: -1551092261643630762
+    second: TEXTO 1_39
+  - first:
+      213: -8844812270425546300
+    second: TEXTO 1_40
+  - first:
+      213: 2341954207803507202
+    second: TEXTO 1_41
+  - first:
+      213: -3916035432083102338
+    second: TEXTO 1_42
+  - first:
+      213: -3676948796884903952
+    second: TEXTO 1_43
+  - first:
+      213: 3400142602727718472
+    second: TEXTO 1_44
+  - first:
+      213: -5736044417493221492
+    second: TEXTO 1_45
+  - first:
+      213: 4539931936603801699
+    second: TEXTO 1_46
+  - first:
+      213: -6462513781517728671
+    second: TEXTO 1_47
+  - first:
+      213: 7941343503383009078
+    second: TEXTO 1_48
+  - first:
+      213: -1097704981747462200
+    second: TEXTO 1_49
+  - first:
+      213: -3051184866772872520
+    second: TEXTO 1_50
+  - first:
+      213: -4167754416153636660
+    second: TEXTO 1_51
+  - first:
+      213: -1749285991995901640
+    second: TEXTO 1_52
+  - first:
+      213: -3013786100118534600
+    second: TEXTO 1_53
+  - first:
+      213: 3958548098087344496
+    second: TEXTO 1_54
+  - first:
+      213: 3634402453391782006
+    second: TEXTO 1_55
+  - first:
+      213: 4282309698607812084
+    second: TEXTO 1_56
+  - first:
+      213: -4370489197363877904
+    second: TEXTO 1_57
+  - first:
+      213: 7098060374464989638
+    second: TEXTO 1_58
+  - first:
+      213: 5694364592645809475
+    second: TEXTO 1_59
+  - first:
+      213: 1769362192212477780
+    second: TEXTO 1_60
+  - first:
+      213: 4634224328348176286
+    second: TEXTO 1_61
+  - first:
+      213: -8400858879103968079
+    second: TEXTO 1_62
+  - first:
+      213: 7832637308603609493
+    second: TEXTO 1_63
+  - first:
+      213: -7799999372366482626
+    second: TEXTO 1_64
+  - first:
+      213: 2212540532660924975
+    second: TEXTO 1_65
+  - first:
+      213: -1486900070954904147
+    second: TEXTO 1_66
+  - first:
+      213: -8902084612269759637
+    second: TEXTO 1_67
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TEXTO 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 12
+        width: 36
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da2103f4d39241ca0800000000000000
+      internalID: -6047163056353439059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_1
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 12
+        width: 39
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f7a5d4f0fe5f4f50800000000000000
+      internalID: 6867812345756100594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_2
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 52
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ecdac63bdd7d6930800000000000000
+      internalID: 4138102013093928168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_3
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 12
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a31184a4a74b5b50800000000000000
+      internalID: 6582934052792243104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_4
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 12
+        width: 39
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0722d976ee53ac10800000000000000
+      internalID: 2063597398245123852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_5
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 12
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88de559204e21ce00800000000000000
+      internalID: 1063181840142429576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_6
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 52
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 828a688bd72990b10800000000000000
+      internalID: 1948249382478850088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_7
+      rect:
+        serializedVersion: 2
+        x: 1261
+        y: 49
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17303b19bb16a0d40800000000000000
+      internalID: 5551356948918764401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_8
+      rect:
+        serializedVersion: 2
+        x: 1294
+        y: 12
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8cf94b8c167c0840800000000000000
+      internalID: 5191654335419382926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_9
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 13
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9e49e32c5b38cab0800000000000000
+      internalID: -4987671320387301733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_10
+      rect:
+        serializedVersion: 2
+        x: 1553
+        y: 12
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07dbcf882a8a542f0800000000000000
+      internalID: -989199127101522576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_11
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 49
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a87024e79859ccf60800000000000000
+      internalID: 8055978251220289418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_12
+      rect:
+        serializedVersion: 2
+        x: 1901
+        y: 13
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d65cc4546bea0eba0800000000000000
+      internalID: -6061653000570747539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_13
+      rect:
+        serializedVersion: 2
+        x: 2038
+        y: 49
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80a93ec30b6526b10800000000000000
+      internalID: 1973234901677480456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_14
+      rect:
+        serializedVersion: 2
+        x: 2158
+        y: 12
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f44344c97c53cc20800000000000000
+      internalID: 3225523436180948211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_15
+      rect:
+        serializedVersion: 2
+        x: 2258
+        y: 52
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48ccc1ddedc987910800000000000000
+      internalID: 1835389329159801988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_16
+      rect:
+        serializedVersion: 2
+        x: 2543
+        y: 12
+        width: 41
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bca92c24df83d92b0800000000000000
+      internalID: -5576238103216874805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_17
+      rect:
+        serializedVersion: 2
+        x: 2635
+        y: 13
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01f3f6ef681ebe240800000000000000
+      internalID: 4822195795940818704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_18
+      rect:
+        serializedVersion: 2
+        x: 2674
+        y: 13
+        width: 41
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce29bdf7d3e153f20800000000000000
+      internalID: 3401658343035212524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_19
+      rect:
+        serializedVersion: 2
+        x: 3021
+        y: 12
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b595f4ad6c65e9ee0800000000000000
+      internalID: -1252468234296272549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_20
+      rect:
+        serializedVersion: 2
+        x: 3121
+        y: 29
+        width: 10
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02bc4a2ec97885d60800000000000000
+      internalID: 7879196655971781408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_21
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 12
+        width: 39
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bacda0f7382f9d930800000000000000
+      internalID: 4168629576694160555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_22
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 12
+        width: 39
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 375a399727ae3bc80800000000000000
+      internalID: -8308039110181542541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_23
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 0
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41193318e36213080800000000000000
+      internalID: -9209537713098485484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_24
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 12
+        width: 36
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ec93c04ef9c98c30800000000000000
+      internalID: 4362239807930473696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_25
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 0
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6303fcc1f1d7ebc40800000000000000
+      internalID: 5529994965038346294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_26
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 12
+        width: 39
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feacabb523bb1f9e0800000000000000
+      internalID: -1589283368523347217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_27
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 12
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d012efb692271730800000000000000
+      internalID: 3969679627410084053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_28
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 13
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fc3d3605901e4d30800000000000000
+      internalID: 4417486516737883385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_29
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 12
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df6369c2325985c30800000000000000
+      internalID: 4348389418530649853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_30
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 12
+        width: 43
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c78d9101c8387100800000000000000
+      internalID: 105896992850151367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_31
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 12
+        width: 36
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d6aada9d7d9ab2c0800000000000000
+      internalID: -4415043321888856368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_32
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 13
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa06fe1d823f84790800000000000000
+      internalID: -7545513819012898646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_33
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 13
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f0ba2de6cf1e3350800000000000000
+      internalID: 5998266692947063032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_34
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 12
+        width: 39
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b6e4b29726bdb270800000000000000
+      internalID: 8267964772003407544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_35
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 13
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b67c3cdb711fd08c0800000000000000
+      internalID: -4031301007156459669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_36
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 12
+        width: 40
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41678718157c2bb70800000000000000
+      internalID: 8913405765398066708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_37
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 13
+        width: 47
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 085b6fa0705eefc60800000000000000
+      internalID: 7853966618592195968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_38
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 12
+        width: 39
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba4292a16f09a2350800000000000000
+      internalID: 5992761640845124779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_39
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 0
+        width: 40
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 657cfda5ec9697ae0800000000000000
+      internalID: -1551092261643630762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_40
+      rect:
+        serializedVersion: 2
+        x: 1252
+        y: 12
+        width: 36
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c1e4441a1ae04580800000000000000
+      internalID: -8844812270425546300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_41
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 12
+        width: 39
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2020c5c91fa408020800000000000000
+      internalID: 2341954207803507202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_42
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 12
+        width: 39
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e75e7d6c58277a9c0800000000000000
+      internalID: -3916035432083102338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_43
+      rect:
+        serializedVersion: 2
+        x: 1511
+        y: 12
+        width: 39
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f71060fc8ad8fcc0800000000000000
+      internalID: -3676948796884903952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_44
+      rect:
+        serializedVersion: 2
+        x: 1597
+        y: 12
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84ef145beabbf2f20800000000000000
+      internalID: 3400142602727718472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_45
+      rect:
+        serializedVersion: 2
+        x: 1683
+        y: 0
+        width: 40
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8f347f3ef97560b0800000000000000
+      internalID: -5736044417493221492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_46
+      rect:
+        serializedVersion: 2
+        x: 1724
+        y: 12
+        width: 41
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36888b1fa04110f30800000000000000
+      internalID: 4539931936603801699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_47
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 12
+        width: 36
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 164c190a4f98056a0800000000000000
+      internalID: -6462513781517728671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_48
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 12
+        width: 39
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 637108e57d1553e60800000000000000
+      internalID: 7941343503383009078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_49
+      rect:
+        serializedVersion: 2
+        x: 1942
+        y: 0
+        width: 40
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cf04ce822b24c0f0800000000000000
+      internalID: -1097704981747462200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_50
+      rect:
+        serializedVersion: 2
+        x: 1983
+        y: 12
+        width: 41
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b294ff878308a5d0800000000000000
+      internalID: -3051184866772872520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_51
+      rect:
+        serializedVersion: 2
+        x: 2029
+        y: 12
+        width: 36
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc0d812b0792926c0800000000000000
+      internalID: -4167754416153636660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_52
+      rect:
+        serializedVersion: 2
+        x: 2067
+        y: 13
+        width: 47
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 839748c88a949b7e0800000000000000
+      internalID: -1749285991995901640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_53
+      rect:
+        serializedVersion: 2
+        x: 2202
+        y: 12
+        width: 36
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 836cc697281ec26d0800000000000000
+      internalID: -3013786100118534600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_54
+      rect:
+        serializedVersion: 2
+        x: 2246
+        y: 13
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0795bcc95869fe630800000000000000
+      internalID: 3958548098087344496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_55
+      rect:
+        serializedVersion: 2
+        x: 2285
+        y: 13
+        width: 42
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 670b93586cdff6230800000000000000
+      internalID: 3634402453391782006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_56
+      rect:
+        serializedVersion: 2
+        x: 2331
+        y: 12
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fd8ab37bf1dd6b30800000000000000
+      internalID: 4282309698607812084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_57
+      rect:
+        serializedVersion: 2
+        x: 2417
+        y: 12
+        width: 39
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f7a1781b37e853c0800000000000000
+      internalID: -4370489197363877904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_58
+      rect:
+        serializedVersion: 2
+        x: 2504
+        y: 12
+        width: 39
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c9034ead40618260800000000000000
+      internalID: 7098060374464989638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_59
+      rect:
+        serializedVersion: 2
+        x: 2590
+        y: 12
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 345273e4d62760f40800000000000000
+      internalID: 5694364592645809475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_60
+      rect:
+        serializedVersion: 2
+        x: 2719
+        y: 12
+        width: 39
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 457c4d11a890e8810800000000000000
+      internalID: 1769362192212477780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_61
+      rect:
+        serializedVersion: 2
+        x: 2807
+        y: 13
+        width: 34
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9f8aa43972105040800000000000000
+      internalID: 4634224328348176286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_62
+      rect:
+        serializedVersion: 2
+        x: 2849
+        y: 12
+        width: 39
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bc52deeb572a6b80800000000000000
+      internalID: -8400858879103968079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_63
+      rect:
+        serializedVersion: 2
+        x: 2890
+        y: 13
+        width: 42
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5913ac1122e13bc60800000000000000
+      internalID: 7832637308603609493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_64
+      rect:
+        serializedVersion: 2
+        x: 2935
+        y: 0
+        width: 40
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3373d1a5e5d0c390800000000000000
+      internalID: -7799999372366482626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_65
+      rect:
+        serializedVersion: 2
+        x: 2978
+        y: 12
+        width: 39
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f22786454e584be10800000000000000
+      internalID: 2212540532660924975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_66
+      rect:
+        serializedVersion: 2
+        x: 3065
+        y: 12
+        width: 39
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da5da3e63487d5be0800000000000000
+      internalID: -1486900070954904147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTO 1_67
+      rect:
+        serializedVersion: 2
+        x: 3120
+        y: 13
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b63a03dd531757480800000000000000
+      internalID: -8902084612269759637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      TEXTO 1_0: -6047163056353439059
+      TEXTO 1_1: 6867812345756100594
+      TEXTO 1_10: -989199127101522576
+      TEXTO 1_11: 8055978251220289418
+      TEXTO 1_12: -6061653000570747539
+      TEXTO 1_13: 1973234901677480456
+      TEXTO 1_14: 3225523436180948211
+      TEXTO 1_15: 1835389329159801988
+      TEXTO 1_16: -5576238103216874805
+      TEXTO 1_17: 4822195795940818704
+      TEXTO 1_18: 3401658343035212524
+      TEXTO 1_19: -1252468234296272549
+      TEXTO 1_2: 4138102013093928168
+      TEXTO 1_20: 7879196655971781408
+      TEXTO 1_21: 4168629576694160555
+      TEXTO 1_22: -8308039110181542541
+      TEXTO 1_23: -9209537713098485484
+      TEXTO 1_24: 4362239807930473696
+      TEXTO 1_25: 5529994965038346294
+      TEXTO 1_26: -1589283368523347217
+      TEXTO 1_27: 3969679627410084053
+      TEXTO 1_28: 4417486516737883385
+      TEXTO 1_29: 4348389418530649853
+      TEXTO 1_3: 6582934052792243104
+      TEXTO 1_30: 105896992850151367
+      TEXTO 1_31: -4415043321888856368
+      TEXTO 1_32: -7545513819012898646
+      TEXTO 1_33: 5998266692947063032
+      TEXTO 1_34: 8267964772003407544
+      TEXTO 1_35: -4031301007156459669
+      TEXTO 1_36: 8913405765398066708
+      TEXTO 1_37: 7853966618592195968
+      TEXTO 1_38: 5992761640845124779
+      TEXTO 1_39: -1551092261643630762
+      TEXTO 1_4: 2063597398245123852
+      TEXTO 1_40: -8844812270425546300
+      TEXTO 1_41: 2341954207803507202
+      TEXTO 1_42: -3916035432083102338
+      TEXTO 1_43: -3676948796884903952
+      TEXTO 1_44: 3400142602727718472
+      TEXTO 1_45: -5736044417493221492
+      TEXTO 1_46: 4539931936603801699
+      TEXTO 1_47: -6462513781517728671
+      TEXTO 1_48: 7941343503383009078
+      TEXTO 1_49: -1097704981747462200
+      TEXTO 1_5: 1063181840142429576
+      TEXTO 1_50: -3051184866772872520
+      TEXTO 1_51: -4167754416153636660
+      TEXTO 1_52: -1749285991995901640
+      TEXTO 1_53: -3013786100118534600
+      TEXTO 1_54: 3958548098087344496
+      TEXTO 1_55: 3634402453391782006
+      TEXTO 1_56: 4282309698607812084
+      TEXTO 1_57: -4370489197363877904
+      TEXTO 1_58: 7098060374464989638
+      TEXTO 1_59: 5694364592645809475
+      TEXTO 1_6: 1948249382478850088
+      TEXTO 1_60: 1769362192212477780
+      TEXTO 1_61: 4634224328348176286
+      TEXTO 1_62: -8400858879103968079
+      TEXTO 1_63: 7832637308603609493
+      TEXTO 1_64: -7799999372366482626
+      TEXTO 1_65: 2212540532660924975
+      TEXTO 1_66: -1486900070954904147
+      TEXTO 1_67: -8902084612269759637
+      TEXTO 1_7: 5551356948918764401
+      TEXTO 1_8: 5191654335419382926
+      TEXTO 1_9: -4987671320387301733
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

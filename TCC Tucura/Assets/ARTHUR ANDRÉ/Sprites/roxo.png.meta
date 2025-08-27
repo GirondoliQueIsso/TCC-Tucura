@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9bfa3b7a474a9064fbcfc672ea51eecb
+guid: 728222f23b684974b98856c095f136ea
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1974731983448625665
-    second: Captura de tela 2025-08-20 091828_0
+      213: -7739686278566801524
+    second: roxo_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Captura de tela 2025-08-20 091828_0
+      name: roxo_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 565
-        height: 357
+        width: 225
+        height: 225
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 102de00c648a76b10800000000000000
-      internalID: 1974731983448625665
+      spriteID: c8f8f05165c179490800000000000000
+      internalID: -7739686278566801524
       vertices: []
       indices: 
       edges: []
@@ -174,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Captura de tela 2025-08-20 091828_0: 1974731983448625665
+      roxo_0: -7739686278566801524
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
