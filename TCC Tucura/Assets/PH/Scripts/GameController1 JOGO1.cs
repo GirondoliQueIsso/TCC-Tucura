@@ -1,3 +1,4 @@
+// GameController.cs (versão corrigida)
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
@@ -28,6 +29,7 @@ public class GameController : MonoBehaviour
 
     [Header("Músicas de Fundo")]
     public AudioClip musicaPrincipal;
+    // O musicaFimDeJogo pode ser usado em outra cena (ex: a tela de Game Over)
     public AudioClip musicaFimDeJogo;
 
     private GameObject petalaRuim;
@@ -36,16 +38,11 @@ public class GameController : MonoBehaviour
     private bool isGameActive = false;
     private bool ignoreFirstInput = false;
 
-    private AudioManager audioManager;
+    // Não precisa mais de uma variável para o AudioManager,
+    // vamos usar o Singleton AudioManager.Instance
+    // private AudioManager audioManager;
 
-    void Awake()
-    {
-        audioManager = AudioManager.Instance;
-        if (audioManager == null)
-        {
-            Debug.LogError("AudioManager não encontrado!");
-        }
-    }
+    // Função Awake removida pois usaremos o Singleton diretamente
 
     public void IniciarJogo()
     {
@@ -62,9 +59,10 @@ public class GameController : MonoBehaviour
 
         AtualizarSelecaoVisual();
 
-        if (audioManager != null && musicaPrincipal != null)
+        // Inicia a música principal da cena
+        if (AudioManager.Instance != null && musicaPrincipal != null)
         {
-            audioManager.PlayMusic(musicaPrincipal, true);
+            AudioManager.Instance.PlayMusic(musicaPrincipal, true);
         }
     }
 
@@ -89,28 +87,42 @@ public class GameController : MonoBehaviour
 
         if (petalaEscolhida == petalaRuim)
         {
+            // --- AQUI ESTÁ A LÓGICA CORRIGIDA ---
             jogoAcabou = true;
 
-            if (audioManager != null && pegarErradaSound != null) audioManager.PlaySFX(pegarErradaSound);
-            if (audioManager != null && musicaFimDeJogo != null) audioManager.PlayMusic(musicaFimDeJogo);
+            // Chama a função especial no AudioManager para o efeito sonoro de game over
+            if (AudioManager.Instance != null && pegarErradaSound != null)
+            {
+                AudioManager.Instance.DuckMusic(pegarErradaSound);
+            }
 
+            // O resto da sua lógica de game over continua igual
             if (abelhaComRaiva != null) abelhaComRaiva.SetActive(true);
             if (abelhaNormal != null) abelhaNormal.SetActive(false);
-
             if (setaIndicadora != null) setaIndicadora.SetActive(false);
 
             StartCoroutine(ShakeObject(mainCameraTransform, duracaoTremor, magnitudeTremor));
             StartCoroutine(ShakeObject(abelhaComRaiva.transform, duracaoTremor, magnitudeTremor * 0.5f));
+
+            // Aqui você pode adicionar uma lógica para carregar a cena de Game Over depois de um tempo
+            // Ex: StartCoroutine(CarregarCenaGameOver(3f));
         }
         else
         {
-            if (audioManager != null && pegarCertaSound != null) audioManager.PlaySFX(pegarCertaSound);
+            if (AudioManager.Instance != null && pegarCertaSound != null)
+            {
+                AudioManager.Instance.PlaySFX(pegarCertaSound);
+            }
 
             petalaEscolhida.SetActive(false);
             MoverSelecao(1);
         }
     }
 
+    // O resto do seu código (ShakeObject, MoverSelecao, AtualizarSelecaoVisual)
+    // pode continuar exatamente igual.
+    // ...
+    // (Cole o resto do seu código aqui)
     private IEnumerator ShakeObject(Transform objectToShake, float duration, float magnitude)
     {
         if (objectToShake == null) yield break;
@@ -141,7 +153,7 @@ public class GameController : MonoBehaviour
             {
                 indiceDaPetalaSelecionada = proximoIndice;
                 AtualizarSelecaoVisual();
-                if (audioManager != null && moverSetaSound != null) audioManager.PlaySFX(moverSetaSound);
+                if (AudioManager.Instance != null && moverSetaSound != null) AudioManager.Instance.PlaySFX(moverSetaSound);
                 return;
             }
         }
@@ -161,7 +173,6 @@ public class GameController : MonoBehaviour
             {
                 setaIndicadora.transform.position = pontosDaSet[indiceDaPetalaSelecionada].position;
                 Vector3 direcaoParaOlhar = (mioloAbelhaNormal.transform.position - setaIndicadora.transform.position).normalized;
-                // AQUI ESTÁ A CORREÇÃO FINAL
                 setaIndicadora.transform.rotation = Quaternion.FromToRotation(Vector3.left, direcaoParaOlhar);
             }
         }

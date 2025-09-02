@@ -566,12 +566,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4be78b72b93bd2441b8483068cf1954c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  masterVolume: 1
-  musicVolume: 0.5
-  sfxVolume: 0.63
-  fadeDuration: 2
-  musicSource1: {fileID: 1160508193}
-  musicSource2: {fileID: 505648080}
+  musicSource: {fileID: 0}
   sfxSource: {fileID: 1836115085}
 --- !u!4 &432983557
 Transform:
@@ -1866,7 +1861,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1115363388
 MonoBehaviour:
   m_ObjectHideFlags: 0
