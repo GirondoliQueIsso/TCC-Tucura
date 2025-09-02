@@ -198,7 +198,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ABELHA COM RAIVA_0: -5628809911003983200
+      ABELHA COM RAIVA_1: 9006224708030813890
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

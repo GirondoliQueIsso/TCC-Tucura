@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      petala selecionada_0: 6055349111881267453
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

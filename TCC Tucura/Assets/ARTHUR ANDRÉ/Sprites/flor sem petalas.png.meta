@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      flor sem petalas_0: 7557312361018125027
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

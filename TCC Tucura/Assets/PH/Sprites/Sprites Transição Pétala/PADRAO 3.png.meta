@@ -1,10 +1,28 @@
 fileFormatVersion: 2
-guid: 390fb269b87e79047a6b3771e556bcf2
+guid: 863f85931d219284dba8a07108041396
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2709083377755712129
-    second: aabelha_0
+      213: -1411133670943876097
+    second: PADRAO 3_0
+  - first:
+      213: -1734271302306240208
+    second: PADRAO 3_1
+  - first:
+      213: 8101094213170843044
+    second: PADRAO 3_2
+  - first:
+      213: 7434403473829634304
+    second: PADRAO 3_3
+  - first:
+      213: 7544456272037263986
+    second: PADRAO 3_4
+  - first:
+      213: 1125320436703374435
+    second: PADRAO 3_5
+  - first:
+      213: 9018529369164242163
+    second: PADRAO 3_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +157,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: aabelha_0
+      name: PADRAO 3_0
       rect:
         serializedVersion: 2
-        x: 699
-        y: 318
-        width: 377
-        height: 300
+        x: 1828
+        y: 1570
+        width: 56
+        height: 111
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +172,140 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 18a6b0e8af8989520800000000000000
-      internalID: 2709083377755712129
+      spriteID: ffb1ccc1765aa6ce0800000000000000
+      internalID: -1411133670943876097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PADRAO 3_1
+      rect:
+        serializedVersion: 2
+        x: 1880
+        y: 1469
+        width: 67
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 039e1e96071aee7e0800000000000000
+      internalID: -1734271302306240208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PADRAO 3_2
+      rect:
+        serializedVersion: 2
+        x: 1884
+        y: 1607
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ad4504f34edc6070800000000000000
+      internalID: 8101094213170843044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PADRAO 3_3
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 1539
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 001ab8ef19e4c2760800000000000000
+      internalID: 7434403473829634304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PADRAO 3_4
+      rect:
+        serializedVersion: 2
+        x: 1867
+        y: 1557
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27abf36d10b43b860800000000000000
+      internalID: 7544456272037263986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PADRAO 3_5
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 100
+        width: 2100
+        height: 1372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36c213899f0fd9f00800000000000000
+      internalID: 1125320436703374435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PADRAO 3_6
+      rect:
+        serializedVersion: 2
+        x: 1897
+        y: 1437
+        width: 47
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fc5675dda0482d70800000000000000
+      internalID: 9018529369164242163
       vertices: []
       indices: 
       edges: []
@@ -173,8 +323,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      aabelha_0: 2709083377755712129
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

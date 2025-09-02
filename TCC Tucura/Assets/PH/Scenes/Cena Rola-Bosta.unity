@@ -1394,7 +1394,7 @@ MonoBehaviour:
   obstaclePrefab: {fileID: 3736553126561490194, guid: 712e8d7e32b83684dbd2416079b03964, type: 3}
   velocidadeInicial: 6
   spawnRateInicial: 2
-  tempoParaAumentarDificuldade: 8
+  tempoParaAumentarDificuldade: 10
   incrementoDeVelocidade: 0.6
   reducaoDoSpawnRate: 0.3
   velocidadeMaxima: 15

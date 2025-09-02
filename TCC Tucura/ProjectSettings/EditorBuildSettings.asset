@@ -6,28 +6,28 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MENU.unity
+    path: "Assets/ARTHUR ANDR\xC9/Scenes/MENU.unity"
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Scenes/SELECTPLAYER.unity
+    path: "Assets/ARTHUR ANDR\xC9/Scenes/SELECTPLAYER.unity"
     guid: 107e425062969af4c99522b5673dc9b7
   - enabled: 1
-    path: "Assets/Scenes/PET\xC1LAS.unity"
+    path: "Assets/ARTHUR ANDR\xC9/Scenes/CENA JOGO.unity"
     guid: dccea352ac13bdc42836c6f69825bd00
   - enabled: 1
-    path: Assets/Scenes/BESOURO.unity
+    path: "Assets/ARTHUR ANDR\xC9/Scenes/BESOURO.unity"
     guid: e6463673d7327684cbd3167817419c35
   - enabled: 1
-    path: Assets/Scenes/LUZAQUECIDA.unity
+    path: "Assets/ARTHUR ANDR\xC9/Scenes/LUZAQUECIDA.unity"
     guid: e8501064c5bf1ba42b70d10d3cde8e70
   - enabled: 1
-    path: Assets/Scenes/MINIGAME4.unity
+    path: "Assets/ARTHUR ANDR\xC9/Scenes/MINIGAME4.unity"
     guid: 99be51b257acf584d9f775deb2c3be29
   - enabled: 1
-    path: Assets/Scenes/MINIGAME5.unity
+    path: "Assets/ARTHUR ANDR\xC9/Scenes/MINIGAME5.unity"
     guid: caa4bae4bd6d4cf4a9b7b637d81cc266
   - enabled: 1
-    path: Assets/Scenes/CenaSelecaoPersonagem.unity
+    path: "Assets/ARTHUR ANDR\xC9/Scenes/CenaSelecaoPersonagem.unity"
     guid: d048a038877402146a558b1c62ee3d2c
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
