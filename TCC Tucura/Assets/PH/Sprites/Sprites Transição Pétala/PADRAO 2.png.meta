@@ -373,7 +373,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PADRAO 2_0: 7395217822998144783
+      PADRAO 2_1: 1318910268688711878
+      PADRAO 2_2: -2623243162889035047
+      PADRAO 2_3: 1104040455237874901
+      PADRAO 2_4: 8568245862285714861
+      PADRAO 2_5: -6188388349515720862
+      PADRAO 2_6: -3860894917732237412
+      PADRAO 2_7: -867709961920219716
+      PADRAO 2_8: -2183879876028065204
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
