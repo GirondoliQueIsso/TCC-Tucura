@@ -3,7 +3,7 @@ using UnityEngine;
 public class MenuInicialController : MonoBehaviour
 {
     public GameObject painelDoMenu;
-    public GameController gameController;
+    //public GameController gameController;
 
     void Update()
     {
@@ -12,7 +12,7 @@ public class MenuInicialController : MonoBehaviour
             if (painelDoMenu.activeSelf)
             {
                 painelDoMenu.SetActive(false);
-                gameController.IniciarJogo();
+                GameController1_JOGO1.Instance.ComecarPartida();
 
                 // Adicione esta linha!
                 this.enabled = false; // Desativa este script para ele não rodar mais.

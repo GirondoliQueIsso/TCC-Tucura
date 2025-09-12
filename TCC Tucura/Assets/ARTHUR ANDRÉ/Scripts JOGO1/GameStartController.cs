@@ -1,73 +1,63 @@
 using UnityEngine;
-using UnityEngine.UI; // Importe esta linha para trabalhar com UI
+using System.Collections; // Importante para usar Coroutines
 
 public class GameStartController : MonoBehaviour
 {
-    // Variável para o Canvas da tela inicial
+    // --- VARIÁVEIS ---
     public GameObject telaInicialCanvas;
-
-    // Variável para o Animator do botão "PRONTO"
-    public Animator prontoButtonAnimator;
-
-    // Variável para os objetos do jogo principal (que devem aparecer depois)
     public GameObject elementosDoJogo;
+    // --- NOVA REFERÊNCIA ---
+    [Tooltip("Arraste o objeto 'ControleDoJogo' aqui")]
+    public GameController1_JOGO1 controleDoJogo; // Referência para o script principal
+
+    private bool jogoIniciado = false; // Trava para evitar múltiplos cliques
 
     void Start()
     {
-        // Garante que a tela inicial está ativa e o jogo não
-        if (telaInicialCanvas != null)
-        {
-            telaInicialCanvas.SetActive(true);
-        }
-        if (elementosDoJogo != null)
-        {
-            elementosDoJogo.SetActive(false);
-        }
+        // Garante o estado inicial correto
+        if (telaInicialCanvas != null) telaInicialCanvas.SetActive(true);
+        if (elementosDoJogo != null) elementosDoJogo.SetActive(false);
     }
 
     void Update()
     {
-        // Se a tela inicial estiver ativa, verifique o input do espaço
-        if (telaInicialCanvas.activeSelf)
+        // Se a tela inicial estiver ativa e o jogador apertar Espaço
+        if (!jogoIniciado && telaInicialCanvas.activeSelf && Input.GetKeyDown(KeyCode.Space))
         {
-            // Quando o jogador APERTA a tecla Espaço
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                // Ativa a animação de "pressionado" do botão
-                if (prontoButtonAnimator != null)
-                {
-                    // "IsPressed" é um parâmetro que vamos criar no Animator
-                    prontoButtonAnimator.SetBool("IsPressed", true);
-                }
-            }
-
-            // Quando o jogador SOLTA a tecla Espaço
-            if (Input.GetKeyUp(KeyCode.Space))
-            {
-                // Volta a animação do botão para o estado normal
-                if (prontoButtonAnimator != null)
-                {
-                    prontoButtonAnimator.SetBool("IsPressed", false);
-                }
-
-                // Inicia o jogo
-                StartGame();
-            }
+            jogoIniciado = true; // Trava o input
+            StartCoroutine(IniciarJogoCoroutine()); // Inicia o jogo de forma segura
         }
     }
 
-    void StartGame()
+    // --- LÓGICA ATUALIZADA PARA INICIAR O JOGO ---
+    IEnumerator IniciarJogoCoroutine()
     {
-        // Desativa a tela inicial
+        // 1. Desativa a tela inicial
         if (telaInicialCanvas != null)
         {
             telaInicialCanvas.SetActive(false);
         }
 
-        // Ativa os objetos do jogo principal
+        // 2. Ativa os objetos principais do jogo
         if (elementosDoJogo != null)
         {
             elementosDoJogo.SetActive(true);
+        }
+
+        // 3. --- PASSO MÁGICO ---
+        // Espera um único frame. Isso "consome" o clique do Espaço e impede
+        // que o SetaPetalaController o detecte no mesmo frame.
+        yield return null;
+
+        // 4. Agora que é seguro, manda o ControleDoJogo começar a partida.
+        // Ele vai criar os ícones e liberar o controle para o jogador 1.
+        if (controleDoJogo != null)
+        {
+            controleDoJogo.ComecarPartida();
+        }
+        else
+        {
+            Debug.LogError("Referência para 'ControleDoJogo' não foi definida no GameStartController!");
         }
     }
 }

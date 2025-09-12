@@ -2,27 +2,40 @@ using UnityEngine;
 
 public class Petala : MonoBehaviour
 {
-    [Tooltip("A imagem da pétala normal (branca).")]
-    public Sprite spriteNormal;
-
-    [Tooltip("A imagem da pétala selecionada (com borda vermelha).")]
-    public Sprite spriteSelecionado;
-
-    private SpriteRenderer spriteRenderer;
+    private SpriteRenderer mioloRenderer; // Vamos continuar chamando de miolo por clareza
+    private SpriteRenderer bordaRenderer;
 
     void Awake()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        mioloRenderer = GetComponent<SpriteRenderer>(); // Pega o renderer da pétala com borda preta
+
+        Transform bordaTransform = transform.Find("Borda");
+        if (bordaTransform != null)
+        {
+            bordaRenderer = bordaTransform.GetComponent<SpriteRenderer>();
+        }
+        else
+        {
+            Debug.LogError("Objeto filho 'Borda' não encontrado!", gameObject);
+        }
+
+        Deselecionar(); // Garante que a borda colorida comece invisível
     }
 
-    public void Selecionar()
+    public void Selecionar(Color corDoJogador)
     {
-        spriteRenderer.sprite = spriteSelecionado;
+        if (bordaRenderer != null)
+        {
+            bordaRenderer.enabled = true; // Mostra a borda colorida
+            bordaRenderer.color = corDoJogador; // Pinta a borda
+        }
     }
 
     public void Deselecionar()
     {
-        spriteRenderer.sprite = spriteNormal;
+        if (bordaRenderer != null)
+        {
+            bordaRenderer.enabled = false; // Esconde a borda colorida
+        }
     }
 }
-

@@ -1,50 +1,57 @@
 using UnityEngine;
-using System.Collections.Generic; // Adicione esta linha para poder usar "List<T>"
+using System.Collections.Generic;
+
+[System.Serializable]
+public class PlayerData
+{
+    public int playerID;
+    public Sprite playerIcon;
+    public bool isEliminated;
+    public Color playerColor;
+    public int originalIndex; // Guarda o índice original da tela de seleção (0-5)
+
+    // O construtor agora também recebe o índice original
+    public PlayerData(int id, Sprite icon, Color color, int index)
+    {
+        playerID = id;
+        playerIcon = icon;
+        isEliminated = false;
+        playerColor = color;
+        originalIndex = index;
+    }
+}
 
 public class GameManager : MonoBehaviour
 {
-    // A 'instância' estática (Singleton) permite acessar este GameManager
-    // de qualquer outro script de forma fácil, usando "GameManager.instance".
     public static GameManager instance;
-
-    // Esta variável vai guardar a quantidade de jogadores (2 ou 4)
-    // que foi escolhida na tela de seleção.
     public int numberOfPlayers;
+    public List<PlayerData> players = new List<PlayerData>();
 
-    // --- MUDANÇA PRINCIPAL ---
-    // Em vez de guardar apenas o GameObject, agora guardamos a "ficha" completa
-    // do personagem (que contém o nome, ícone e o futuro prefab).
-    // Esta lista será preenchida na tela de seleção de personagem.
-    public List<CharacterData> selectedCharacters = new List<CharacterData>();
-
-    // A função Awake é chamada antes de qualquer função Start, garantindo
-    // que nossa instância esteja pronta desde o início.
-    private void Awake()
+    void Awake()
     {
-        // Lógica do Singleton: garante que SÓ EXISTA UM GameManager no jogo inteiro.
         if (instance == null)
         {
-            // Se não existe nenhuma instância, esta se torna a instância principal.
             instance = this;
-
-            // Esta é a linha mais importante: impede que este objeto (o GameManager)
-            // seja destruído quando uma nova cena é carregada.
-            // Assim, mantemos as informações (nº de jogadores, personagens escolhidos) entre as cenas.
             DontDestroyOnLoad(gameObject);
         }
         else
         {
-            // Se um GameManager já existe (por exemplo, se você voltou para o menu principal),
-            // este novo que tentou ser criado é destruído para evitar duplicatas e erros.
             Destroy(gameObject);
         }
     }
 
-    // Função pública para limpar a lista de personagens escolhidos.
-    // Isso é útil para chamar quando um novo jogo começa (ao sair do menu),
-    // garantindo que as escolhas da partida anterior sejam apagadas.
+    public void SetupGame(List<Sprite> characterIcons, List<Color> characterColors)
+    {
+        players.Clear();
+        for (int i = 0; i < characterIcons.Count; i++)
+        {
+            // Agora, ao criar o jogador, passamos 'i' como o seu índice original
+            players.Add(new PlayerData(i + 1, characterIcons[i], characterColors[i], i));
+        }
+    }
+
     public void ClearSelections()
     {
-        selectedCharacters.Clear();
+        players.Clear();
     }
 }
