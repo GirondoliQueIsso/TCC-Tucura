@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
+using UnityEngine.SceneManagement; // Adicione esta linha para poder trocar de cena
 
 public class GameController1_JOGO1 : MonoBehaviour
 {
@@ -54,6 +55,7 @@ public class GameController1_JOGO1 : MonoBehaviour
         else Destroy(gameObject);
     }
 
+    // --- FUNÇÃO START CORRIGIDA ---
     void Start()
     {
         if (GameManager.instance != null && GameManager.instance.players.Any())
@@ -63,11 +65,11 @@ public class GameController1_JOGO1 : MonoBehaviour
         else
         {
             Debug.LogWarning("GameManager não encontrado! Criando jogadores de teste.");
-            // Exemplo de como seria com o novo construtor para teste
+            // A criação de jogadores de teste agora inclui 'null' para o sprite da folha
             jogadores = new List<PlayerData>
             {
-                new PlayerData(1, null, Color.red, 0),
-                new PlayerData(2, null, Color.blue, 1)
+                new PlayerData(1, null, Color.red, 0, null),
+                new PlayerData(2, null, Color.blue, 1, null)
             };
         }
         elementosDoJogo.SetActive(false);
@@ -112,10 +114,7 @@ public class GameController1_JOGO1 : MonoBehaviour
 
         if (indicePetalaAtual == petalaRuimIndex)
         {
-            if (AudioManager.Instance != null && PegarErradaSound != null)
-            {
-                AudioManager.Instance.DuckMusic(PegarErradaSound);
-            }
+            if (AudioManager.Instance != null && PegarErradaSound != null) AudioManager.Instance.DuckMusic(PegarErradaSound);
             AbelhaNormal?.SetActive(false);
             AbelhaComRaiva?.SetActive(true);
             SetaIndicadora?.gameObject.SetActive(false);
@@ -125,10 +124,7 @@ public class GameController1_JOGO1 : MonoBehaviour
         }
         else
         {
-            if (AudioManager.Instance != null && PegarCertaSound != null)
-            {
-                AudioManager.Instance.PlaySFX(PegarCertaSound);
-            }
+            if (AudioManager.Instance != null && PegarCertaSound != null) AudioManager.Instance.PlaySFX(PegarCertaSound);
             TodasAsPetalas[indicePetalaAtual].SetActive(false);
             ProximoJogador();
         }
@@ -147,11 +143,7 @@ public class GameController1_JOGO1 : MonoBehaviour
             {
                 indicePetalaAtual = proximoIndice;
                 AtualizarSelecaoVisual();
-
-                if (AudioManager.Instance != null && MoverSetaSound != null)
-                {
-                    AudioManager.Instance.PlaySFX(MoverSetaSound);
-                }
+                if (AudioManager.Instance != null && MoverSetaSound != null) AudioManager.Instance.PlaySFX(MoverSetaSound);
                 return;
             }
         }
@@ -159,17 +151,27 @@ public class GameController1_JOGO1 : MonoBehaviour
 
     void AnunciarVencedor()
     {
+        // Cria a lista de ranking
+        List<PlayerData> rankingFinal = new List<PlayerData>();
         PlayerData vencedor = jogadores.FirstOrDefault(p => !p.isEliminated);
         if (vencedor != null)
         {
-            textoJogadorDaVez.text = "Jogador " + vencedor.playerID + " VENCEU!";
-            elementosDoJogo.SetActive(false);
-
-            if (AudioManager.Instance != null && musicaDoVencedor != null)
+            rankingFinal.Add(vencedor);
+            // Adiciona os perdedores (a ordem pode precisar de ajuste se houver 2º, 3º lugar, etc.)
+            foreach (PlayerData perdedor in jogadores.Where(p => p.isEliminated))
             {
-                AudioManager.Instance.PlayMusic(musicaDoVencedor, false);
+                rankingFinal.Add(perdedor);
             }
         }
+
+        // Dá os pontos
+        if (GameManager.instance != null)
+        {
+            GameManager.instance.AwardPoints(rankingFinal);
+        }
+
+        // Carrega a cena de ranking
+        SceneManager.LoadScene("CenaRanking");
     }
 
     #region LÓGICA DE TURNOS E RODADAS
@@ -194,24 +196,16 @@ public class GameController1_JOGO1 : MonoBehaviour
             p.SetActive(true);
         }
         petalaRuimIndex = Random.Range(0, TodasAsPetalas.Count);
-        Debug.Log("Pétala Ruim da rodada: " + petalaRuimIndex);
 
-        // --- LÓGICA DE SELEÇÃO DO PRIMEIRO JOGADOR DA RODADA ---
-
-        // Procura o próximo jogador para começar a rodada, a partir do último que começou
         int proximoIndexInicial = (ultimoJogadorQueIniciouRodada + 1) % jogadores.Count;
         int jogadorInicial = proximoIndexInicial;
 
-        // Loop para encontrar o próximo jogador válido (não eliminado)
         while (jogadores[jogadorInicial].isEliminated)
         {
             jogadorInicial = (jogadorInicial + 1) % jogadores.Count;
-
-            // Se demos uma volta completa e não achamos ninguém, algo está errado (mas isso evita um loop infinito)
             if (jogadorInicial == proximoIndexInicial) break;
         }
 
-        // Define o jogador encontrado como o jogador atual e guarda a informação
         jogadorAtualIndex = jogadorInicial;
         ultimoJogadorQueIniciouRodada = jogadorAtualIndex;
 
@@ -222,15 +216,11 @@ public class GameController1_JOGO1 : MonoBehaviour
     {
         textoJogadorDaVez.text = "Vez do Jogador " + jogadores[jogadorAtualIndex].playerID;
 
-        // --- LÓGICA DE DESTAQUE ATUALIZADA E MAIS SEGURA ---
-        for (int i = 0; i < jogadores.Count; i++) // Usamos jogadores.Count para garantir
+        for (int i = 0; i < jogadores.Count; i++)
         {
-            // Garante que temos um ícone para este jogador
             if (i < uiIcones.Count && uiIcones[i] != null)
             {
-                // Pega a imagem da borda (o componente Image no objeto pai do prefab)
                 Image bordaImg = uiIcones[i].GetComponent<Image>();
-
                 if (bordaImg != null)
                 {
                     if (jogadores[i].isEliminated)
@@ -240,7 +230,9 @@ public class GameController1_JOGO1 : MonoBehaviour
                     }
                     else if (i == jogadorAtualIndex)
                     {
-                        bordaImg.color = jogadores[i].playerColor;
+                        Color corDoJogador = jogadores[i].playerColor;
+                        corDoJogador.a = 1f;
+                        bordaImg.color = corDoJogador;
                         uiIcones[i].transform.localScale = new Vector3(1.2f, 1.2f, 1.2f);
                     }
                     else
@@ -251,7 +243,6 @@ public class GameController1_JOGO1 : MonoBehaviour
                 }
             }
         }
-
         MoverParaPrimeiraPetalaDisponivel();
         podeControlarSeta = true;
     }
@@ -271,10 +262,7 @@ public class GameController1_JOGO1 : MonoBehaviour
     {
         jogadores[jogadorAtualIndex].isEliminated = true;
         Image iconeImg = uiIcones[jogadorAtualIndex].GetComponentInChildren<Image>();
-        if (iconeImg != null)
-        {
-            iconeImg.color = Color.grey;
-        }
+        if (iconeImg != null) iconeImg.color = Color.grey;
         textoJogadorDaVez.text = "Jogador " + jogadores[jogadorAtualIndex].playerID + " foi eliminado!";
         yield return new WaitForSeconds(DuracaoTremor);
         AbelhaNormal.SetActive(true);
@@ -301,10 +289,7 @@ public class GameController1_JOGO1 : MonoBehaviour
                 petalaObj.GetComponent<Petala>().Deselecionar();
             }
         }
-
         GameObject petalaSelecionada = TodasAsPetalas[indicePetalaAtual];
-
-        // --- ESTA É A MUDANÇA PRINCIPAL QUE CORRIGE O ERRO ---
         PlayerData jogadorDaVez = jogadores[jogadorAtualIndex];
         petalaSelecionada.GetComponent<Petala>().Selecionar(jogadorDaVez.playerColor);
 
@@ -317,7 +302,6 @@ public class GameController1_JOGO1 : MonoBehaviour
             SetaIndicadora.transform.rotation = Quaternion.Euler(0, 0, angulo + 180);
         }
     }
-
     void MoverParaPrimeiraPetalaDisponivel()
     {
         for (int i = 0; i < TodasAsPetalas.Count; i++)
@@ -330,7 +314,6 @@ public class GameController1_JOGO1 : MonoBehaviour
             }
         }
     }
-
     private IEnumerator ShakeObject(Transform objectToShake, float duration, float magnitude)
     {
         if (objectToShake == null) yield break;

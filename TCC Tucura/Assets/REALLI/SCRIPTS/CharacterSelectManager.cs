@@ -9,25 +9,24 @@ public class Personagem
 {
     public string nome;
     public Sprite iconeDoPersonagem;
-    public Color corDoJogador; // Adicionamos o campo para a cor
+    public Color corDoJogador;
+    public Sprite spriteDaFolha; // O sprite da folha colorida correspondente
 }
 
 public class CharacterSelectManager : MonoBehaviour
 {
     [Header("CONFIGURAÇÃO DOS PERSONAGENS E CENAS")]
     public List<Personagem> ListaDePersonagens;
-    public List<string> CenasDeMinigames; // <<-- DECLARAÇÃO ESTAVA FALTANDO AQUI
+
 
     [Header("REFERÊNCIAS DA INTERFACE (UI)")]
     public List<Button> BotoesDePersonagem;
     public TextMeshProUGUI TextoDoJogador;
 
-    // --- VARIÁVEIS INTERNAS ---
     private int jogadorAtual = 1;
-    private List<Personagem> personagensSelecionados = new List<Personagem>(); // <<-- DECLARAÇÃO ESTAVA FALTANDO AQUI
+    private List<Personagem> personagensSelecionados = new List<Personagem>();
     private int numeroDeJogadores;
 
-    // A função Start está correta
     void Start()
     {
         if (GameManager.instance != null)
@@ -39,12 +38,10 @@ public class CharacterSelectManager : MonoBehaviour
             Debug.LogWarning("GameManager não encontrado. Usando 2 jogadores como padrão para teste.");
             numeroDeJogadores = 2;
         }
-
         ConfigurarBotoes();
         AtualizarTextoUI();
     }
 
-    // A função ConfigurarBotoes está correta
     void ConfigurarBotoes()
     {
         for (int i = 0; i < BotoesDePersonagem.Count; i++)
@@ -54,7 +51,6 @@ public class CharacterSelectManager : MonoBehaviour
         }
     }
 
-    // A função SelecionarPersonagem está correta
     public void SelecionarPersonagem(int indexDoPersonagem)
     {
         Personagem personagemEscolhido = ListaDePersonagens[indexDoPersonagem];
@@ -74,43 +70,46 @@ public class CharacterSelectManager : MonoBehaviour
         }
     }
 
-    // A função AtualizarTextoUI está correta
     void AtualizarTextoUI()
     {
         TextoDoJogador.text = "Vez do Jogador " + jogadorAtual;
     }
 
-    // A função IniciarJogo foi corrigida
     void IniciarJogo()
     {
+        // Esta parte de coletar os dados dos jogadores está perfeita e continua a mesma
         List<Sprite> iconesDosJogadores = new List<Sprite>();
         List<Color> coresDosJogadores = new List<Color>();
+        List<Sprite> folhasDosJogadores = new List<Sprite>();
 
         foreach (Personagem p in personagensSelecionados)
         {
             iconesDosJogadores.Add(p.iconeDoPersonagem);
             coresDosJogadores.Add(p.corDoJogador);
+            folhasDosJogadores.Add(p.spriteDaFolha);
         }
 
+        // A lógica de sorteio agora é feita aqui dentro
         if (GameManager.instance != null)
         {
-            GameManager.instance.SetupGame(iconesDosJogadores, coresDosJogadores);
+            // 1. Envia os dados dos jogadores para o GameManager
+            GameManager.instance.SetupGame(iconesDosJogadores, coresDosJogadores, folhasDosJogadores);
+
+            // --- LÓGICA DE SORTEIO ATUALIZADA E CENTRALIZADA ---
+            // 2. Pede ao GameManager para sortear o próximo minigame da lista dele
+            string proximaCena = GameManager.instance.SortearProximoMinigame();
+
+            // 3. Carrega a cena que o GameManager escolheu
+            Debug.Log("Carregando minigame sorteado pelo GameManager: " + proximaCena);
+            SceneManager.LoadScene(proximaCena);
         }
         else
         {
             Debug.LogError("ERRO CRÍTICO: GameManager não foi encontrado!");
+            // O return aqui não é estritamente necessário, mas é uma boa prática
             return;
         }
 
-        if (CenasDeMinigames.Count > 0)
-        {
-            int indiceSorteado = Random.Range(0, CenasDeMinigames.Count);
-            string cenaSorteada = CenasDeMinigames[indiceSorteado];
-            SceneManager.LoadScene(cenaSorteada);
-        }
-        else
-        {
-            Debug.LogError("ERRO: A lista 'CenasDeMinigames' está vazia!");
-        }
+        // A lógica de sorteio antiga que estava aqui embaixo foi REMOVIDA.
     }
 }
