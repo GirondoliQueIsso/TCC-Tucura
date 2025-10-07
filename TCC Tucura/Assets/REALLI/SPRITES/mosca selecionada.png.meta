@@ -198,7 +198,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      mosca selecionada_0: -5035090970957376533
+      mosca selecionada_1: -515224793307604230
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

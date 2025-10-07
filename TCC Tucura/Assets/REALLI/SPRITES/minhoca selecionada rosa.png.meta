@@ -198,7 +198,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      minhoca selecionada rosa_0: -9054008414990199989
+      minhoca selecionada rosa_1: -5699904039089908036
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
