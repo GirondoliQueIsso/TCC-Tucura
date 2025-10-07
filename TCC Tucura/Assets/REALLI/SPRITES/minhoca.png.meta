@@ -198,7 +198,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      minhoca_0: -8377135859094032400
+      minhoca_1: 3829602639433938732
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

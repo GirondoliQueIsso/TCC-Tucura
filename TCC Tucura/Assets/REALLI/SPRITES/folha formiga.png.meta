@@ -198,7 +198,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      folha formiga_0: -6081650878467357034
+      folha formiga_1: 1463364148254319496
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

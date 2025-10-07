@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      LPQUADRADO preto_0: 3413815036352077263
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

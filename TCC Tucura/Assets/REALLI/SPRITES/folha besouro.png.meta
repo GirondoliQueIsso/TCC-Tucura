@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      folha besouro_0: 8332087623112885257
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

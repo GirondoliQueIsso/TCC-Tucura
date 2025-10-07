@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      folha minhoca_0: 2598437929403321532
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

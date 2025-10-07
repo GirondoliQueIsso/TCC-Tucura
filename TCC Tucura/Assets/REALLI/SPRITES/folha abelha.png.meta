@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      folha abelha_0: 3427541237328414505
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

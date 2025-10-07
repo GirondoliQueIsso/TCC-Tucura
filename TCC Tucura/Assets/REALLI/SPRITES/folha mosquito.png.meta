@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      folha mosquito_0: -6953092249570464838
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

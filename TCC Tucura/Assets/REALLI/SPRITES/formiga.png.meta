@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      formiga_0: 2333796635263749011
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
