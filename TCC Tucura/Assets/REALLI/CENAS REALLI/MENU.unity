@@ -2243,6 +2243,7 @@ MonoBehaviour:
   players: []
   todosOsMinigames:
   - "P\xC9TALAS"
+  - MINIGAME5
 --- !u!4 &1252893974
 Transform:
   m_ObjectHideFlags: 0

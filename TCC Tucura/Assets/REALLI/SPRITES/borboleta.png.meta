@@ -248,11 +248,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      borboleta_0: -7626186632808046989
-      borboleta_1: -4052126223184796018
-      borboleta_2: 5004466202934939873
-      borboleta_3: 6536212535692027501
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
