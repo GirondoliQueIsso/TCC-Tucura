@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
-using UnityEngine.SceneManagement; // Adicione esta linha para poder trocar de cena
+using UnityEngine.SceneManagement;
 
 public class GameController1_JOGO1 : MonoBehaviour
 {
@@ -55,21 +55,20 @@ public class GameController1_JOGO1 : MonoBehaviour
         else Destroy(gameObject);
     }
 
-    // --- FUNÇÃO START CORRIGIDA ---
     void Start()
     {
         if (GameManager.instance != null && GameManager.instance.players.Any())
         {
             jogadores = GameManager.instance.players;
+            GameManager.instance.ClearSelections();
         }
         else
         {
             Debug.LogWarning("GameManager não encontrado! Criando jogadores de teste.");
-            // A criação de jogadores de teste agora inclui 'null' para o sprite da folha
             jogadores = new List<PlayerData>
             {
-                new PlayerData(1, null, Color.red, 0, null),
-                new PlayerData(2, null, Color.blue, 1, null)
+                new PlayerData(1, null, null, Color.red, 0, null),
+                new PlayerData(2, null, null, Color.blue, 1, null)
             };
         }
         elementosDoJogo.SetActive(false);
@@ -81,7 +80,6 @@ public class GameController1_JOGO1 : MonoBehaviour
         elementosDoJogo.SetActive(true);
         CriarIconesUI();
         IniciarRodada();
-
         if (AudioManager.Instance != null && musicaDaPartida != null)
         {
             AudioManager.Instance.PlayMusic(musicaDaPartida, true);
@@ -91,27 +89,18 @@ public class GameController1_JOGO1 : MonoBehaviour
     void Update()
     {
         if (!podeControlarSeta) return;
-
         if (Input.GetKeyDown(KeyCode.RightArrow)) MoverSelecao(1);
         else if (Input.GetKeyDown(KeyCode.LeftArrow)) MoverSelecao(-1);
-
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return))
         {
-            if (ignorarPrimeiroInput)
-            {
-                ignorarPrimeiroInput = false;
-            }
-            else
-            {
-                ConfirmarSelecao();
-            }
+            if (ignorarPrimeiroInput) ignorarPrimeiroInput = false;
+            else ConfirmarSelecao();
         }
     }
 
     public void ConfirmarSelecao()
     {
         podeControlarSeta = false;
-
         if (indicePetalaAtual == petalaRuimIndex)
         {
             if (AudioManager.Instance != null && PegarErradaSound != null) AudioManager.Instance.DuckMusic(PegarErradaSound);
@@ -138,7 +127,6 @@ public class GameController1_JOGO1 : MonoBehaviour
             proximoIndice += direcao;
             if (proximoIndice >= TodasAsPetalas.Count) proximoIndice = 0;
             if (proximoIndice < 0) proximoIndice = TodasAsPetalas.Count - 1;
-
             if (TodasAsPetalas[proximoIndice].activeSelf)
             {
                 indicePetalaAtual = proximoIndice;
@@ -151,26 +139,20 @@ public class GameController1_JOGO1 : MonoBehaviour
 
     void AnunciarVencedor()
     {
-        // Cria a lista de ranking
         List<PlayerData> rankingFinal = new List<PlayerData>();
         PlayerData vencedor = jogadores.FirstOrDefault(p => !p.isEliminated);
         if (vencedor != null)
         {
             rankingFinal.Add(vencedor);
-            // Adiciona os perdedores (a ordem pode precisar de ajuste se houver 2º, 3º lugar, etc.)
             foreach (PlayerData perdedor in jogadores.Where(p => p.isEliminated))
             {
                 rankingFinal.Add(perdedor);
             }
         }
-
-        // Dá os pontos
         if (GameManager.instance != null)
         {
             GameManager.instance.AwardPoints(rankingFinal);
         }
-
-        // Carrega a cena de ranking
         SceneManager.LoadScene("CenaRanking");
     }
 
@@ -180,10 +162,11 @@ public class GameController1_JOGO1 : MonoBehaviour
         foreach (var jogador in jogadores)
         {
             GameObject iconeObj = Instantiate(prefabIconeJogador, containerIconesJogadores.transform);
-            Image iconeImg = iconeObj.GetComponentInChildren<Image>();
+            Image iconeImg = iconeObj.GetComponent<Image>();
             if (iconeImg != null && jogador.playerIcon != null)
             {
                 iconeImg.sprite = jogador.playerIcon;
+                iconeImg.color = Color.white; // Garante que comece sem tingimento
             }
             uiIcones.Add(iconeObj);
         }
@@ -191,54 +174,44 @@ public class GameController1_JOGO1 : MonoBehaviour
 
     void IniciarRodada()
     {
-        foreach (GameObject p in TodasAsPetalas)
-        {
-            p.SetActive(true);
-        }
+        foreach (GameObject p in TodasAsPetalas) p.SetActive(true);
         petalaRuimIndex = Random.Range(0, TodasAsPetalas.Count);
-
         int proximoIndexInicial = (ultimoJogadorQueIniciouRodada + 1) % jogadores.Count;
         int jogadorInicial = proximoIndexInicial;
-
         while (jogadores[jogadorInicial].isEliminated)
         {
             jogadorInicial = (jogadorInicial + 1) % jogadores.Count;
             if (jogadorInicial == proximoIndexInicial) break;
         }
-
         jogadorAtualIndex = jogadorInicial;
         ultimoJogadorQueIniciouRodada = jogadorAtualIndex;
-
         IniciarTurno();
     }
 
     void IniciarTurno()
     {
         textoJogadorDaVez.text = "Vez do Jogador " + jogadores[jogadorAtualIndex].playerID;
-
         for (int i = 0; i < jogadores.Count; i++)
         {
             if (i < uiIcones.Count && uiIcones[i] != null)
             {
-                Image bordaImg = uiIcones[i].GetComponent<Image>();
-                if (bordaImg != null)
+                Image iconeImg = uiIcones[i].GetComponent<Image>();
+                if (iconeImg != null)
                 {
                     if (jogadores[i].isEliminated)
                     {
-                        bordaImg.color = Color.grey;
+                        iconeImg.color = Color.grey; // Eliminado fica cinza
                         uiIcones[i].transform.localScale = Vector3.one;
                     }
-                    else if (i == jogadorAtualIndex)
+                    else if (i == jogadorAtualIndex) // Jogador da vez
                     {
-                        Color corDoJogador = jogadores[i].playerColor;
-                        corDoJogador.a = 1f;
-                        bordaImg.color = corDoJogador;
-                        uiIcones[i].transform.localScale = new Vector3(1.2f, 1.2f, 1.2f);
+                        iconeImg.color = Color.white; // Fica branco (cores originais)
+                        uiIcones[i].transform.localScale = new Vector3(1.2f, 1.2f, 1.2f); // E aumenta de tamanho
                     }
-                    else
+                    else // Jogadores esperando
                     {
-                        bordaImg.color = Color.white;
-                        uiIcones[i].transform.localScale = Vector3.one;
+                        iconeImg.color = Color.white; // Ficam brancos (cores originais)
+                        uiIcones[i].transform.localScale = Vector3.one; // E em tamanho normal
                     }
                 }
             }
@@ -261,7 +234,7 @@ public class GameController1_JOGO1 : MonoBehaviour
     IEnumerator ProcessoDeEliminacao()
     {
         jogadores[jogadorAtualIndex].isEliminated = true;
-        Image iconeImg = uiIcones[jogadorAtualIndex].GetComponentInChildren<Image>();
+        Image iconeImg = uiIcones[jogadorAtualIndex].GetComponent<Image>();
         if (iconeImg != null) iconeImg.color = Color.grey;
         textoJogadorDaVez.text = "Jogador " + jogadores[jogadorAtualIndex].playerID + " foi eliminado!";
         yield return new WaitForSeconds(DuracaoTremor);

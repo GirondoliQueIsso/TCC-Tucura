@@ -2242,7 +2242,7 @@ MonoBehaviour:
   numberOfPlayers: 0
   players: []
   todosOsMinigames:
-  - "P\xC9TALAS"
+  - Cena Rola-Bosta
 --- !u!4 &1252893974
 Transform:
   m_ObjectHideFlags: 0

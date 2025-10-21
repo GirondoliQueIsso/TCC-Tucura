@@ -1,28 +1,31 @@
 using UnityEngine;
 using System.Collections.Generic;
-using System.Linq; // Essencial para funções de lista
+using System.Linq;
 
 [System.Serializable]
 public class PlayerData
 {
     public int playerID;
     public Sprite playerIcon;
+    public GameObject playerPrefab; // Prefab do personagem foi adicionado aqui
     public bool isEliminated;
     public Color playerColor;
     public int originalIndex;
     public float score;
     public Sprite leafSprite;
-    public float previousScore; // Guarda a pontuação antes do último minigame
+    public float previousScore;
 
-    public PlayerData(int id, Sprite icon, Color color, int index, Sprite leaf)
+    // O construtor foi atualizado para receber o prefab
+    public PlayerData(int id, Sprite icon, GameObject prefab, Color color, int index, Sprite leaf)
     {
         playerID = id;
         playerIcon = icon;
+        playerPrefab = prefab; // Atribuição do prefab
         isEliminated = false;
         playerColor = color;
         originalIndex = index;
         score = 0f;
-        previousScore = 0f; // Garante que a pontuação anterior também comece em zero
+        previousScore = 0f;
         leafSprite = leaf;
     }
 }
@@ -45,7 +48,6 @@ public class GameManager : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
-
             ResetarMinigamesDisponiveis();
         }
         else
@@ -54,48 +56,42 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void SetupGame(List<Sprite> characterIcons, List<Color> characterColors, List<Sprite> leafSprites)
+    // Função atualizada para receber a lista de prefabs dos personagens
+    public void SetupGame(List<Sprite> characterIcons, List<GameObject> characterPrefabs, List<Color> characterColors, List<Sprite> leafSprites)
     {
-        // Esta função só é chamada no início de uma partida completa,
-        // então ela reseta/cria os jogadores do zero.
         players.Clear();
         for (int i = 0; i < characterIcons.Count; i++)
         {
-            players.Add(new PlayerData(i + 1, characterIcons[i], characterColors[i], i, leafSprites[i]));
+            // Adiciona o novo PlayerData com o prefab correspondente
+            players.Add(new PlayerData(i + 1, characterIcons[i], characterPrefabs[i], characterColors[i], i, leafSprites[i]));
         }
     }
 
     public void ClearSelections()
     {
-        // Reseta o status de "eliminado" de todos os jogadores para o próximo minigame
         foreach (var player in players)
         {
             player.isEliminated = false;
         }
     }
 
-    // A função para adicionar pontos ao final de um minigame
     public void AwardPoints(List<PlayerData> playerRanking)
     {
-        // --- LÓGICA ATUALIZADA ---
-        // 1. Antes de adicionar os novos pontos, salvamos a pontuação atual de cada jogador
         foreach (var player in players)
         {
             player.previousScore = player.score;
         }
 
-        // 2. Define a tabela de pontos
         float[] pointsToAward;
         if (numberOfPlayers == 2)
         {
             pointsToAward = new float[] { 0.20f, 0f };
         }
-        else // Assume 4 jogadores
+        else
         {
             pointsToAward = new float[] { 0.20f, 0.10f, 0.05f, 0f };
         }
 
-        // 3. Adiciona os novos pontos
         for (int i = 0; i < playerRanking.Count; i++)
         {
             PlayerData rankedPlayer = playerRanking[i];
@@ -104,7 +100,7 @@ public class GameManager : MonoBehaviour
             if (mainPlayer != null && i < pointsToAward.Length)
             {
                 mainPlayer.score += pointsToAward[i];
-                mainPlayer.score = Mathf.Clamp01(mainPlayer.score); // Garante que a pontuação não passe de 1.0 (100%)
+                mainPlayer.score = Mathf.Clamp01(mainPlayer.score);
             }
         }
     }
@@ -124,9 +120,7 @@ public class GameManager : MonoBehaviour
 
         int indiceSorteado = Random.Range(0, minigamesDisponiveis.Count);
         string cenaSorteada = minigamesDisponiveis[indiceSorteado];
-
         minigamesDisponiveis.RemoveAt(indiceSorteado);
-
         return cenaSorteada;
     }
 }

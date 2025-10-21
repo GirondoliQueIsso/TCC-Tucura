@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    [Header("Controle do Jogador")]
+    public int playerID; // Identificador único para cada jogador (1, 2, 3 ou 4)
+
     // Variáveis de Pulo
     public float forcaPulo = 15f;
     public float jumpCutMultiplier = 0.5f;
@@ -12,7 +15,7 @@ public class Player : MonoBehaviour
     public float raioChecagemChao = 0.2f;
     public LayerMask layerDoChao;
     private bool estaNoChao;
-    private bool estavaNoChao; // Armazena o estado do chão do frame anterior
+    private bool estavaNoChao;
 
     // Variáveis para controle de pulo triplo
     private int pulosDisponiveis = 3;
@@ -20,6 +23,18 @@ public class Player : MonoBehaviour
     private bool podePular = true;
 
     private Animator anim;
+    private string botaoPulo; // Armazena o nome do botão de pulo (ex: "Jump1", "Jump2")
+    private bool isAlive = true;
+
+    // Referência ao Game Controller do minigame
+    private GameControllerRolaBosta gameController;
+
+    public void Initialize(int id, GameControllerRolaBosta controller)
+    {
+        playerID = id;
+        gameController = controller;
+        botaoPulo = "Jump" + playerID; // Configura o botão de pulo baseado no ID
+    }
 
     void Start()
     {
@@ -29,30 +44,45 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        // 1. Checa o estado atual do chão
+        if (!isAlive) return;
+
         estaNoChao = Physics2D.OverlapCircle(peDoJogador.position, raioChecagemChao, layerDoChao);
 
-        // Lógica de Animação
+        // DEBUG: Para ver se a checagem do chão está funcionando
+        if (Input.GetKeyDown(KeyCode.T)) // Aperte T para testar
+        {
+            Debug.Log("Player " + playerID + " está no chão? " + estaNoChao);
+        }
+
         if (anim != null)
         {
             anim.SetBool("isJumping", !estaNoChao);
             anim.SetFloat("velocityY", rb.linearVelocity.y);
         }
 
-        // 2. Compara o estado atual com o anterior para detectar a aterrissagem
         if (estaNoChao && !estavaNoChao)
         {
             AudioManagerBesouro.instance.PlaySound("ATERRIZAGEM");
             ResetarPulos();
         }
 
-        // Lógica de Pulo
-        if (Input.GetButtonDown("Jump") && podePular && pulosDisponiveis > 0)
+        // DEBUG: Para ver se o input está sendo detectado
+        if (Input.GetButtonDown(botaoPulo))
         {
-            Pular();
+            Debug.Log("Botão de pulo " + botaoPulo + " foi pressionado para o Player " + playerID);
+
+            if (podePular && pulosDisponiveis > 0)
+            {
+                Debug.Log("Jogador " + playerID + " VAI PULAR!");
+                Pular();
+            }
+            else
+            {
+                Debug.Log("Jogador " + playerID + " tentou pular mas não pôde. Condições: podePular=" + podePular + ", pulosDisponiveis=" + pulosDisponiveis);
+            }
         }
 
-        if (Input.GetButtonUp("Jump"))
+        if (Input.GetButtonUp(botaoPulo))
         {
             if (rb.linearVelocity.y > 0)
             {
@@ -60,7 +90,6 @@ public class Player : MonoBehaviour
             }
         }
 
-        // 3. Atualiza o estado anterior do chão no final
         estavaNoChao = estaNoChao;
     }
 
@@ -86,11 +115,24 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Obstaculo"))
+        if (collision.gameObject.CompareTag("Obstaculo") && isAlive)
         {
-            AudioManagerBesouro.instance.PlaySound("MORTE");
-            gameObject.SetActive(false);
-            Debug.Log("Jogador morreu!");
+            Die();
+        }
+    }
+
+    // Função para quando o jogador morrer
+    private void Die()
+    {
+        isAlive = false;
+        AudioManagerBesouro.instance.PlaySound("MORTE");
+        gameObject.SetActive(false); // Desativa o objeto do jogador
+        Debug.Log("Jogador " + playerID + " morreu!");
+
+        // Avisa o GameController que este jogador foi eliminado
+        if (gameController != null)
+        {
+            gameController.PlayerDied(playerID);
         }
     }
 

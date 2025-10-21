@@ -9,15 +9,15 @@ public class Personagem
 {
     public string nome;
     public Sprite iconeDoPersonagem;
+    public GameObject prefabDoPersonagem; // Campo para o prefab foi adicionado aqui
     public Color corDoJogador;
-    public Sprite spriteDaFolha; // O sprite da folha colorida correspondente
+    public Sprite spriteDaFolha;
 }
 
 public class CharacterSelectManager : MonoBehaviour
 {
     [Header("CONFIGURAÇÃO DOS PERSONAGENS E CENAS")]
     public List<Personagem> ListaDePersonagens;
-
 
     [Header("REFERÊNCIAS DA INTERFACE (UI)")]
     public List<Button> BotoesDePersonagem;
@@ -77,39 +77,33 @@ public class CharacterSelectManager : MonoBehaviour
 
     void IniciarJogo()
     {
-        // Esta parte de coletar os dados dos jogadores está perfeita e continua a mesma
+        // Listas para coletar todos os dados dos personagens selecionados
         List<Sprite> iconesDosJogadores = new List<Sprite>();
+        List<GameObject> prefabsDosJogadores = new List<GameObject>(); // Lista para os prefabs
         List<Color> coresDosJogadores = new List<Color>();
         List<Sprite> folhasDosJogadores = new List<Sprite>();
 
         foreach (Personagem p in personagensSelecionados)
         {
             iconesDosJogadores.Add(p.iconeDoPersonagem);
+            prefabsDosJogadores.Add(p.prefabDoPersonagem); // Adiciona o prefab à lista
             coresDosJogadores.Add(p.corDoJogador);
             folhasDosJogadores.Add(p.spriteDaFolha);
         }
 
-        // A lógica de sorteio agora é feita aqui dentro
         if (GameManager.instance != null)
         {
-            // 1. Envia os dados dos jogadores para o GameManager
-            GameManager.instance.SetupGame(iconesDosJogadores, coresDosJogadores, folhasDosJogadores);
+            // Envia todos os dados, incluindo a lista de prefabs, para o GameManager
+            GameManager.instance.SetupGame(iconesDosJogadores, prefabsDosJogadores, coresDosJogadores, folhasDosJogadores);
 
-            // --- LÓGICA DE SORTEIO ATUALIZADA E CENTRALIZADA ---
-            // 2. Pede ao GameManager para sortear o próximo minigame da lista dele
             string proximaCena = GameManager.instance.SortearProximoMinigame();
-
-            // 3. Carrega a cena que o GameManager escolheu
             Debug.Log("Carregando minigame sorteado pelo GameManager: " + proximaCena);
             SceneManager.LoadScene(proximaCena);
         }
         else
         {
             Debug.LogError("ERRO CRÍTICO: GameManager não foi encontrado!");
-            // O return aqui não é estritamente necessário, mas é uma boa prática
             return;
         }
-
-        // A lógica de sorteio antiga que estava aqui embaixo foi REMOVIDA.
     }
 }
