@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      formiga tatu_0: -5899052426793589848
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

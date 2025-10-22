@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      mosca tatu_0: 7658250555095376089
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

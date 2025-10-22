@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      abelha tatu_0: 3321111483988360434
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
